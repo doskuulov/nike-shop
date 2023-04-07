@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -32,15 +31,81 @@ h6 {
 	font-size: inherit;
 }
 
+
 html,
 body {
+	/* max-width: 1366px; */
+	/* -webkit-font-smoothing: antialiased; */
+	/* -moz-osx-font-smoothing: grayscale; */
+	/* min-width: 100%; */
+	font-family: 'Poppins', sans-serif;
 	height: 100%;
 	line-height: 1;
 	font-size: 14px;
 	font-weight: 500;
 	color: #ffffff;
-  border-image: url('https://i.ibb.co/MpF1h1T/por-4.jpg');
-	background: linear-gradient(89.96deg, #000000 0.04%, rgba(255, 255, 255, 0) 99.97%);
-	font-family: 'Manrope', sans-serif;
+	background: #ffffff;
+	margin: 0 auto;
+	max-width: 1366px;
+}
+
+input {
+	border: none;
+	font-family: 'AmazonEmber_Bd';
+	font-weight: 700;
+	font-size: 15px;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+:root {
+	/* { Background } */
+	--header-bg: rgba(19, 25, 33);
+	--search-bg: rgb(250, 204, 21);
+	--search-hover: rgb(234, 179, 8);
+	--bg-amazon-blue: rgb(35, 47, 62);
+
+	/* { Color } */
+	--text-white: rgb(255, 255, 255);
+}
+
+.link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.cost {
+	visibility: hidden;
+}
+
+@media all and (min-width: 1024px) {
+	.cost {
+		visibility: visible;
+	}
+}
+
+.main {
+	max-width: 1536px;
 	margin: 0 auto;
 }
+
+.cart__container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.sort__panel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
