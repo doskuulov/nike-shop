@@ -1,25 +1,24 @@
-
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 ol,
 li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 a h1,
 h2,
@@ -27,85 +26,83 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
-
 
 html,
 body {
-	/* max-width: 1366px; */
-	/* -webkit-font-smoothing: antialiased; */
-	/* -moz-osx-font-smoothing: grayscale; */
-	/* min-width: 100%; */
-	font-family: 'Poppins', sans-serif;
-	height: 100%;
-	line-height: 1;
-	font-size: 14px;
-	font-weight: 500;
-	color: #000;
-	background: #ffffff;
-	margin: 0 auto;
-	max-width: 1366px;
+  /* max-width: 1366px; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+  /* min-width: 100%; */
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  background: #ffffff;
+  margin: 0 auto;
+  max-width: 1366px;
 }
 
 input {
-	border: none;
-	font-family: 'AmazonEmber_Bd';
-	font-weight: 700;
-	font-size: 15px;
+  border: none;
+  font-family: "AmazonEmber_Bd";
+  font-weight: 700;
+  font-size: 15px;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 :root {
-	/* { Background } */
-	--header-bg: rgba(19, 25, 33);
-	--search-bg: rgb(250, 204, 21);
-	--search-hover: rgb(234, 179, 8);
-	--bg-amazon-blue: rgb(35, 47, 62);
+  /* { Background } */
+  --header-bg: rgba(19, 25, 33);
+  --search-bg: rgb(250, 204, 21);
+  --search-hover: rgb(234, 179, 8);
+  --bg-amazon-blue: rgb(35, 47, 62);
 
-	/* { Color } */
-	--text-white: rgb(255, 255, 255);
+  /* { Color } */
+  --text-white: rgb(255, 255, 255);
 }
 
 .link:hover {
-	cursor: pointer;
-	text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .cost {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 @media all and (min-width: 1024px) {
-	.cost {
-		visibility: visible;
-	}
+  .cost {
+    visibility: visible;
+  }
 }
 
 .main {
-	max-width: 1536px;
-	margin: 0 auto;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 
 .cart__container {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .sort__panel {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-

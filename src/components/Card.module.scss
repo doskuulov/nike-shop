@@ -1,123 +1,121 @@
+.h {
+  flex-wrap: wrap !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+}
+
 .cart__wrapper {
-	width: clamp(200px, 50%, 300px);
-	padding: 15px ;
-	border-radius: 0.375rem;
-	background: #ffff;
-	margin: 0.5rem;
-    flex-wrap: wrap;
-	display: flex !important;
-	flex-direction: column;
-	justify-content: space-around !important;
-	.cart__top {
-		padding-top: 10px;
-		background: #ffff;
+  width: clamp(200px, 50%, 300px);
+  padding: 15px;
+  border-radius: 0.375rem;
+  background: #ffff;
+  margin: 0.5rem;
+  flex-wrap: wrap;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-around !important;
+  .cart__top {
+    padding-top: 10px;
+    background: #ffff;
 
-		img {
-			width: 100%;
-			object-fit: contain;
-			height: 300px;
-		}
-	}
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 300px;
+    }
+  }
 
-	.cart__bottom {
-		.cart__title {
-			color: #000 !important;
-			line-height: 24px !important;
-			font-weight: 400 !important;
-			font-weight: 600!important;
-			font-size: 13px!important;
-		}
-		.cart__price {
-			color: #0f1111;
-			font-size: 1.3rem;
-			margin-top: 0.675rem;
+  .cart__bottom {
+    .cart__title {
+      color: #000 !important;
+      line-height: 24px !important;
+      font-weight: 400 !important;
+      font-weight: 600 !important;
+      font-size: 13px !important;
+    }
+    .cart__price {
+      color: #0f1111;
+      font-size: 1.3rem;
+      margin-top: 0.675rem;
 
-			align-items: center;
-			background-color: #005bff;
-			box-sizing: border-box;
-			color: #fff;
-			display: inline-flex;
-			font-family: GTEestiPro,arial,sans-serif;
-			font-size: 14px;
-			font-weight: 500;
-			height: inherit;
-			justify-content: center;
-			line-height: 18px;
-			border-radius: 10px;
-			min-height: 32px;
-			min-width: 96px;
-			padding: 0 12px;
-			text-align: center;
-			transition: color .15s ease-in-out,background .15s ease-in-out,opacity .3s ease-in-out;
-			z-index: 9999;
-		}
+      align-items: center;
+      background-color: #005bff;
+      box-sizing: border-box;
+      color: #fff;
+      display: inline-flex;
+      font-family: GTEestiPro, arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: inherit;
+      justify-content: center;
+      line-height: 18px;
+      border-radius: 10px;
+      min-height: 32px;
+      min-width: 96px;
+      padding: 0 12px;
+      text-align: center;
+      transition: color 0.15s ease-in-out, background 0.15s ease-in-out,
+        opacity 0.3s ease-in-out;
+      z-index: 9999;
+    }
 
-		.cart__add {
-			display: flex;
-			
+    .cart__add {
+      display: flex;
 
-			p {
-			border-radius: 6px;
-			font-size: 20px;
-			font-weight: 700;
-			line-height: 26px;
-			margin: 0 4px 2px 0;
-			padding: 0 6px;
-			white-space: nowrap;
-			color: rgb(255, 255, 255);
-			background-color: rgb(16, 196, 76);
-			}
+      p {
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 0 4px 2px 0;
+        padding: 0 6px;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        background-color: rgb(16, 196, 76);
+      }
 
-			del {
-				padding-top: 8px;
-				color: #f9115f;
-			    font-size: 14px;
-			}
-		
-		}
-	}
+      del {
+        padding-top: 8px;
+        color: #f9115f;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .ff {
-    padding-top: 20px;
-    display: flex;
+  padding-top: 20px;
+  display: flex;
 
-    button {
-        position: relative;
-        left: 15px;
-        bottom: 0px;
-        background: none;
-        color:  #005bff;
-        font-weight: 700;
-        border-radius: 20px;
-        padding: 10px;
-        transition: 0.5s all ease-in-out;
-    }
+  button {
+    position: relative;
+    left: 15px;
+    bottom: 0px;
+    background: none;
+    color: #005bff;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+  }
 
-    button:hover {
-        background: #707f8d;;
-    }
+  button:hover {
+    background: #707f8d;
+  }
 }
 
 .cart__foot {
-	padding-top: 5px;
-	display: flex;
-	
-	p {
-		font-weight: 600;
-	}
+  padding-top: 5px;
+  display: flex;
 
-	span {
-		padding-left: 5px;
-		font-weight: 600;
-		color: rgb(113, 127, 141);
-	}
+  p {
+    font-weight: 600;
+  }
 
-}
-
-.bmw {
-	flex-wrap: wrap;
-	display: flex !important;
-	// flex-direction: column;
-	justify-content: space-around ;
+  span {
+    padding-left: 5px;
+    font-weight: 600;
+    color: rgb(113, 127, 141);
+  }
 }

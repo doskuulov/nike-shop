@@ -1,38 +1,49 @@
-import React from 'react'
-import styles from '../components/Card.module.scss'
+import styles from "../components/Card.module.scss";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Card = () => {
+  const [objects, setObjects] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await axios.get(
+        "https://64326fb1d0127730d2d258cb.mockapi.io/object"
+      );
+      setObjects(response.data);
+    };
+    fetchData();
+  }, []);
   return (
     <>
-    <div className={styles.ff}>
+      <div className={styles.ff}>
         <h1>Только до 19.04!</h1>
         <button>Успей купить</button>
-    </div>
-    
-	<div className={styles.bmw}>
-    <div className={styles.cart__wrapper}>
-					<div className={styles.cart__top}>
-						<img width={100} src='https://cdn1.ozone.ru/s3/multimedia-7/wc250/6234904939.jpg' alt='Cart Item' />
-					</div>
-					<div className={styles.cart__bottom}>
-						<div className={styles.cart__add}>
-							<p>4 184,34 с</p>
-							<del>7909,2</del>
-						</div>
-						<h3 className={styles.cart__title}>Подгузники детские YokoSun, Размер 3 / М (5-10 кг), SuperMegaBox 248 шт</h3>
-						<p className={styles.cart__price}>В корзину</p>
-						
-						<div className={styles.cart__foot}>
-							<p>14 апреля,</p>
-							<span>Азия Лайф</span>
-						</div>
-					</div>
-				</div>
+      </div>
+      {objects.map((object) => (
+        <div className={styles.h}>
+          <div className={styles.cart__wrapper}>
+            <div className={styles.cart__top}>
+              <img width={100} src={object.avatar} alt="Cart Item" />
+            </div>
+            <div className={styles.cart__bottom}>
+              <div className={styles.cart__add}>
+                <p>{object.price}</p>
+                <del>{object.fakeprice}</del>
+              </div>
+              <h3 className={styles.cart__title}>{object.name}</h3>
+              <p className={styles.cart__price}>В корзину</p>
 
-				</div>
-</>
-                
-  )
-}
+              <div className={styles.cart__foot}>
+                <p>{object.footername2}</p>
+                <span>{object.footername1}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </>
+  );
+};
 
-export default Card
+export default Card;
