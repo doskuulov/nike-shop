@@ -73,6 +73,7 @@ const Header = ({ value, setValue, allItems }) => {
 					<p className={`link ${styles.details} cost`}>
 					<MdFoodBank size={17}/>	Продукты питания</p>
 			</div>
+			<div className={styles.line}></div>
 		</header>
 	)
 }
