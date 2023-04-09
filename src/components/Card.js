@@ -1,9 +1,15 @@
 import styles from "../components/Card.module.scss";
 import React, { useState, useEffect } from "react";
+import { ClipLoader } from "react-spinners";
 import axios from "axios";
 
 const Card = () => {
   const [objects, setObjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +25,13 @@ const Card = () => {
       <div className={styles.ff}>
         <h1>Только до 19.04!</h1>
         <button>Успей купить</button>
-      </div>
+      </div>{" "}
+      <ClipLoader
+        loading={loading}
+        size={150}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
       {objects.map((object) => (
         <div className={styles.h}>
           <div className={styles.cart__wrapper}>

@@ -45,6 +45,7 @@ body {
   background: #ffffff;
   margin: 0 auto;
   max-width: 1366px;
+  transition: 0.2s linear;
 }
 
 input {

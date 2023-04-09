@@ -1,8 +1,9 @@
 .h {
-  flex-wrap: wrap !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-around !important;
+  display: inline-flex;
+  max-width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cart__wrapper {
@@ -12,9 +13,9 @@
   background: #ffff;
   margin: 0.5rem;
   flex-wrap: wrap;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around !important;
+  justify-content: space-around;
   .cart__top {
     padding-top: 10px;
     background: #ffff;
@@ -38,7 +39,7 @@
       color: #0f1111;
       font-size: 1.3rem;
       margin-top: 0.675rem;
-
+      cursor: pointer;
       align-items: center;
       background-color: #005bff;
       box-sizing: border-box;
@@ -118,4 +119,8 @@
     font-weight: 600;
     color: rgb(113, 127, 141);
   }
+}
+
+.rr {
+  display: flex;
 }
