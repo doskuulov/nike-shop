@@ -1,11 +1,15 @@
-import Card from "./components/Card";
-import Header from "./components/Header";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
+import Avia from "./components/avia/avia";
 
 function App() {
   return (
     <>
-      <Header />
-      <Card />
+      {/* <Home /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="avia" element={<Avia />} />
+      </Routes>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// import Avia from "../Pages/Avia";
 import { IoMdExit, IoFastFoodOutline } from "react-icons/io";
 import { BsBoxArrowInDownLeft, BsHouseDoor, BsSearch } from "react-icons/bs";
 import { RiShoppingBasket2Line } from "react-icons/ri";
@@ -54,9 +55,11 @@ const Header = ({ value, setValue, allItems }) => {
       {/* Bottom Nav */}
       <div className={styles.bottom__nav}>
         <p>All</p>
-        <p className={`link ${styles.details}`}>
-          <GiAirplaneDeparture size={17} /> Билеты, отели, туры
-        </p>
+        <Link to="avia">
+          <p className={`link ${styles.details}`}>
+            <GiAirplaneDeparture size={17} /> Билеты, отели, туры
+          </p>
+        </Link>
         <p className={`link ${styles.details}`}>
           <GiLargeDress size={15} /> Одежда и обувь
         </p>
