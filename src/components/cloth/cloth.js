@@ -1,7 +1,14 @@
-import React from "react";
+import Card from "../Card";
+import Header from "../Header";
 
-const cloth = () => {
-  return <div>cloth</div>;
+const Cloth = () => {
+  return (
+    <div>
+      <Header />
+      Одежда И обувь
+      <Card />
+    </div>
+  );
 };
 
-export default cloth;
+export default Cloth;

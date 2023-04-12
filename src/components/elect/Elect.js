@@ -1,13 +1,12 @@
-import React from "react";
 import Header from "../Header";
 
-const Avia = () => {
+const Elect = () => {
   return (
     <div>
       <Header />
-      Билеты
+      Электроника
     </div>
   );
 };
 
-export default Avia;
+export default Elect;

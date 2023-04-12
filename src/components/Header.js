@@ -55,33 +55,47 @@ const Header = ({ value, setValue, allItems }) => {
       {/* Bottom Nav */}
       <div className={styles.bottom__nav}>
         <p>All</p>
+        {/*  */}
         <Link to="avia">
           <p className={`link ${styles.details}`}>
             <GiAirplaneDeparture size={17} /> Билеты, отели, туры
           </p>
         </Link>
-        <p className={`link ${styles.details}`}>
-          <GiLargeDress size={15} /> Одежда и обувь
-        </p>
-        <p className={`link ${styles.details}`}>
-          <SlScreenSmartphone size={15} /> Электроника
-        </p>
+        {/*  */}
+        <Link to="cloth">
+          <p className={`link ${styles.details}`}>
+            <GiLargeDress size={15} /> Одежда и обувь
+          </p>
+        </Link>
+        {/*  */}
+        <Link to="Elect">
+          <p className={`link ${styles.details}`}>
+            <SlScreenSmartphone size={15} /> Электроника
+          </p>
+        </Link>
+
+        {/*  */}
         <p className={`link ${styles.details} cost`}>
           <BsHouseDoor size={16} />
           Дом и сад
         </p>
+        {/*  */}
         <p className={`link ${styles.details} cost`}>
           <TbMoodKid size={17} /> Детские товары
         </p>
+        {/*  */}
         <p className={`link ${styles.details} cost`}>
           <AiOutlineStock size={19} /> Акции
         </p>
+        {/*  */}
         <p className={`link ${styles.details} cost`}>
           <MdOutlineWorkspacePremium size={17} /> Premium
         </p>
+        {/*  */}
         <p className={`link ${styles.details} cost`}>
           <TbBrandSupabase size={17} /> Бренды
         </p>
+        {/*  */}
         <p className={`link ${styles.details} cost`}>
           <MdFoodBank size={17} /> Продукты питания
         </p>
